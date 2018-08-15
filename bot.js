@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = '++'
 
-client.login('NDUwNzYzMjgxMjkzMTE1NDA0.DjJvuQ.uuQ6jbGOY2YS_qOfmWW22v9dWLU')
+client.login(process.env.BOT_TOKEN)
 
 client.on('ready', () => {
     console.log('Le self bot de Lucky est bien en route \n Connecté sur ' + client.guilds.array());
